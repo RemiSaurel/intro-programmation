@@ -1,0 +1,12 @@
+/* style.css */
+body {
+  font-family: sans-serif;
+}
+
+#container {
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  display: flex;
+  flex-wrap: wrap;
+}
