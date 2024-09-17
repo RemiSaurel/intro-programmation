@@ -23,6 +23,9 @@ export abstract class Shape {
   }
 
   public setWidth(width: number): void {
+    if (width < 0) {
+      throw new Error("Width must be greater than 0");
+    }
     this.width = width;
   }
 
@@ -31,6 +34,9 @@ export abstract class Shape {
   }
 
   public setHeight(height: number): void {
+    if (height < 0) {
+      throw new Error("Height must be greater than 0");
+    }
     this.height = height;
   }
 
